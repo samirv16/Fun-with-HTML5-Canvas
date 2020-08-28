@@ -34,7 +34,7 @@
 
   canvas.addEventListener('mousedown', () => {
     isDrawing = true;
-    
+    [lastX, lastY] = [e.offsetX, e.offsetY];
   })
 
   canvas.addEventListener('mousemove', draw)
